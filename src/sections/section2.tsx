@@ -10,39 +10,30 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 
-const ManadeelSlider = () => {
+const Section2 = () => {
   const images = [
-    "/Manadeel/m1.jpg",
-    "/Manadeel/m25.jpg",
-    "/Manadeel/m26.jpg",
-    "/Manadeel/m2.jpg",
-    "/Manadeel/m24.jpg",
-    "/Manadeel/m27.jpg",
-    "/Manadeel/m3.jpg",
-    "/Manadeel/m23.jpg",
-    "/Manadeel/m4.jpg",
-    "/Manadeel/m22.jpg",
-    "/Manadeel/m5.jpg",
-    "/Manadeel/m21.jpg",
-    "/Manadeel/m6.jpg",
+    "/section2/e1.jpg",
+    "/section2/e11.jpg",
+    "/section2/e2.jpg",
 
-    "/Manadeel/m7.jpg",
-    "/Manadeel/m19.jpg",
-    "/Manadeel/m8.jpg",
+    "/section2/e3.jpg",
 
-    "/Manadeel/m9.jpg",
-    "/Manadeel/m17.jpg",
-    "/Manadeel/m10.jpg",
-    "/Manadeel/m16.jpg",
-    "/Manadeel/m11.jpg",
-    "/Manadeel/m15.jpg",
-    "/Manadeel/m12.jpg",
-    "/Manadeel/m14.jpg",
-    "/Manadeel/m13.jpg",
+    "/section2/e4.jpg",
+    // "/section2/e14.jpg",
+    "/section2/e5.jpg",
+    "/section2/e15.jpg",
+    "/section2/e6.jpg",
+    "/section2/e16.jpg",
+    "/section2/e7.jpg",
+    "/section2/e17.jpg",
+    "/section2/e8.jpg",
+    "/section2/e18.jpg",
+    "/section2/e9.jpg",
+    "/section2/e19.jpg",
   ];
 
   return (
-    <section id="Mandeel" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto sm:px-6 px-12">
         <h2
           className="text-2xl md:text-4xl font-extrabold text-center mb-16
@@ -51,7 +42,7 @@ const ManadeelSlider = () => {
   drop-shadow-lg
   transition-transform duration-500 hover:scale-105 hover:tracking-wider"
         >
-          مناديل كتب الكتاب
+          صواني الخطوبة
         </h2>
 
         <Carousel className="sm:max-w-6xl mx-auto max-w-6xl">
@@ -68,6 +59,9 @@ const ManadeelSlider = () => {
                         src={img}
                         alt={`manadeel ${index}`}
                         fill
+                        sizes="(max-width: 768px) 100vw, 
+         (max-width: 1200px) 50vw, 
+         33vw"
                         className="object-cover"
                       />
                     </div>
@@ -84,4 +78,4 @@ const ManadeelSlider = () => {
   );
 };
 
-export default ManadeelSlider;
+export default Section2;

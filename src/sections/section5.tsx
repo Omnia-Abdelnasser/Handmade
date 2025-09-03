@@ -10,39 +10,19 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 
-const ManadeelSlider = () => {
+const Section5 = () => {
   const images = [
-    "/Manadeel/m1.jpg",
-    "/Manadeel/m25.jpg",
-    "/Manadeel/m26.jpg",
-    "/Manadeel/m2.jpg",
-    "/Manadeel/m24.jpg",
-    "/Manadeel/m27.jpg",
-    "/Manadeel/m3.jpg",
-    "/Manadeel/m23.jpg",
-    "/Manadeel/m4.jpg",
-    "/Manadeel/m22.jpg",
-    "/Manadeel/m5.jpg",
-    "/Manadeel/m21.jpg",
-    "/Manadeel/m6.jpg",
-
-    "/Manadeel/m7.jpg",
-    "/Manadeel/m19.jpg",
-    "/Manadeel/m8.jpg",
-
-    "/Manadeel/m9.jpg",
-    "/Manadeel/m17.jpg",
-    "/Manadeel/m10.jpg",
-    "/Manadeel/m16.jpg",
-    "/Manadeel/m11.jpg",
-    "/Manadeel/m15.jpg",
-    "/Manadeel/m12.jpg",
-    "/Manadeel/m14.jpg",
-    "/Manadeel/m13.jpg",
+    "/section5/b1.jpg",
+    "/section5/b2.jpg",
+    "/section5/b3.jpg",
+    "/section5/b4.jpg",
+    "/section5/b5.jpg",
+    "/section5/b6.jpg",
+    "/section5/b7.jpg",
   ];
 
   return (
-    <section id="Mandeel" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto sm:px-6 px-12">
         <h2
           className="text-2xl md:text-4xl font-extrabold text-center mb-16
@@ -51,7 +31,7 @@ const ManadeelSlider = () => {
   drop-shadow-lg
   transition-transform duration-500 hover:scale-105 hover:tracking-wider"
         >
-          مناديل كتب الكتاب
+          شنط لولي
         </h2>
 
         <Carousel className="sm:max-w-6xl mx-auto max-w-6xl">
@@ -66,8 +46,11 @@ const ManadeelSlider = () => {
                     <div className="relative w-full h-full">
                       <Image
                         src={img}
-                        alt={`manadeel ${index}`}
+                        alt={` ${index}`}
                         fill
+                        sizes="(max-width: 768px) 100vw, 
+         (max-width: 1200px) 50vw, 
+         33vw"
                         className="object-cover"
                       />
                     </div>
@@ -84,4 +67,4 @@ const ManadeelSlider = () => {
   );
 };
 
-export default ManadeelSlider;
+export default Section5;

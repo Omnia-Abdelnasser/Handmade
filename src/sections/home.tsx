@@ -1,22 +1,26 @@
 export default function Hero() {
   return (
     <>
-      <section className=" min-h-screen relative bg-gray-50 dark:bg-gray-900 py-20 px-6 text-center">
+      <section
+        id="home"
+        className=" min-h-screen relative bg-gray-50 dark:bg-gray-900 py-20 px-6 text-center"
+      >
         <div className="max-w-3xl mx-auto mt-[15%]">
-          <h1 className="text-2xl md:text-5xl font-extrabold text-pink-500 leading-tight">
-            ✨لمسات يدوية تصنع الفرق ✨
+          <h1 className="text-2xl md:text-5xl font-semibold text-pink-500 leading-tight">
+            ✨Creative Hive✨
           </h1>
 
           <p className="mt-6 text-lg text-gray-800 dark:text-gray-50">
             نقدم مجموعة متنوعة من الأعمال اليدوية الفريدة: صواني كتب الكتاب
-            المزخرفة، مرايات أنيقة، شنط أولى عملية، مناديل كتب الكتاب، لوحات
-            البصمة التذكارية، والهوايات المميزة. كل قطعة تُصنع بعناية لتبقى ذكرى
-            لا تُنسى وتضفي لمسة خاصة على مناسباتك.
+            المزخرفة، مرايات أنيقة، شنط لولي عملية، مناديل كتب الكتاب، لوحات
+            البصمة التذكارية، والهوايات المميزة , الطارةو غيرها من الحاجات
+            المميزة. كل قطعة تُصنع بعناية لتبقى ذكرى لا تُنسى وتضفي لمسة خاصة
+            على مناسباتك.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="#products"
+              href="#Mandeel"
               className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-full shadow-lg transition"
             >
               تصفحي المنتجات

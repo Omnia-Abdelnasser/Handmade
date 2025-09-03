@@ -8,41 +8,32 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
+import { useRef } from "react";
 
-const ManadeelSlider = () => {
+const Section6 = () => {
   const images = [
-    "/Manadeel/m1.jpg",
-    "/Manadeel/m25.jpg",
-    "/Manadeel/m26.jpg",
-    "/Manadeel/m2.jpg",
-    "/Manadeel/m24.jpg",
-    "/Manadeel/m27.jpg",
-    "/Manadeel/m3.jpg",
-    "/Manadeel/m23.jpg",
-    "/Manadeel/m4.jpg",
-    "/Manadeel/m22.jpg",
-    "/Manadeel/m5.jpg",
-    "/Manadeel/m21.jpg",
-    "/Manadeel/m6.jpg",
-
-    "/Manadeel/m7.jpg",
-    "/Manadeel/m19.jpg",
-    "/Manadeel/m8.jpg",
-
-    "/Manadeel/m9.jpg",
-    "/Manadeel/m17.jpg",
-    "/Manadeel/m10.jpg",
-    "/Manadeel/m16.jpg",
-    "/Manadeel/m11.jpg",
-    "/Manadeel/m15.jpg",
-    "/Manadeel/m12.jpg",
-    "/Manadeel/m14.jpg",
-    "/Manadeel/m13.jpg",
+    "/section6/s1.jpg",
+    "/section6/s2.jpg",
+    "/section6/s3.jpg",
+    "/section6/s4.jpg",
+    "/section6/s5.jpg",
+    "/section6/s6.jpg",
+    "/section6/s7.jpg",
+    "/section6/s8.jpg",
+    "/section6/s9.jpg",
+    "/section6/s10.jpg",
+    "/section6/s11.jpg",
+    "/section6/s12.jpg",
+    "/section6/s13.jpg",
+    "/section6/s14.jpg",
+    "/section6/s15.jpg",
   ];
+  const autoplay = useRef(Autoplay({ delay: 2000, stopOnInteraction: false }));
 
   return (
-    <section id="Mandeel" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto sm:px-6 px-12">
         <h2
           className="text-2xl md:text-4xl font-extrabold text-center mb-16
@@ -51,10 +42,13 @@ const ManadeelSlider = () => {
   drop-shadow-lg
   transition-transform duration-500 hover:scale-105 hover:tracking-wider"
         >
-          مناديل كتب الكتاب
+          قسم مميز
         </h2>
 
-        <Carousel className="sm:max-w-6xl mx-auto max-w-6xl">
+        <Carousel
+          plugins={[autoplay.current]}
+          className="sm:max-w-6xl mx-auto max-w-6xl"
+        >
           <CarouselContent>
             {images.map((img, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
@@ -66,8 +60,11 @@ const ManadeelSlider = () => {
                     <div className="relative w-full h-full">
                       <Image
                         src={img}
-                        alt={`manadeel ${index}`}
+                        alt={` ${index}`}
                         fill
+                        sizes="(max-width: 768px) 100vw, 
+         (max-width: 1200px) 50vw, 
+         33vw"
                         className="object-cover"
                       />
                     </div>
@@ -84,4 +81,4 @@ const ManadeelSlider = () => {
   );
 };
 
-export default ManadeelSlider;
+export default Section6;

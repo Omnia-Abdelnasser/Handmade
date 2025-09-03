@@ -4,6 +4,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import { ModeToggle } from "./mode";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -15,17 +16,24 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="border-b shadow-sm bg-gray-50 dark:bg-gray-900 fixed top-0 w-full z-50">
+    <nav
+      dir="rtl"
+      className="border-b shadow-sm bg-gray-50 dark:bg-gray-900 fixed top-0 w-full z-50"
+    >
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo / Title */}
           <div className="flex flex-shrink-0 items-center">
-            <div className="sm:text-2xl font-bold text-pink-500">
-              لمسات يدوية
+            <div className="flex items-center space-x-3">
+              <Image
+                src="/logo/WhatsApp Image 2025-09-03 at 23.18.45_db20e454.jpg"
+                alt="Logo"
+                width={40}
+                height={40}
+                className="rounded-full object-cover"
+              />
             </div>
           </div>
 
-          {/* Desktop menu */}
           <div className="hidden md:flex space-x-8">
             <a
               href="#home"
@@ -37,7 +45,7 @@ const Navbar = () => {
               الرئيسية
             </a>
             <a
-              href="#products"
+              href="#Mandeel"
               onClick={() => handleClick("products")}
               className={`text-lg px-3 py-2 font-medium transition-colors ${
                 activeLink === "products"
@@ -54,7 +62,7 @@ const Navbar = () => {
                 activeLink === "about" ? "text-pink-500" : "dark:text-gray-50 "
               }`}
             >
-              من نحن
+              من انا
             </a>
             <a
               href="#contact"
@@ -65,7 +73,7 @@ const Navbar = () => {
                   : "dark:text-gray-50 "
               }`}
             >
-              تواصل معنا
+              تواصل معني
             </a>
           </div>
 
