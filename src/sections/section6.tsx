@@ -8,9 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
-import { useRef } from "react";
 
 const Section6 = () => {
   const images = [
@@ -30,14 +28,13 @@ const Section6 = () => {
     "/section6/s14.jpg",
     "/section6/s15.jpg",
   ];
-  const autoplay = useRef(Autoplay({ delay: 2000, stopOnInteraction: false }));
 
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section className="py-10 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto sm:px-6 px-12">
         <h2
-          className="text-2xl md:text-4xl font-extrabold text-center mb-16
-  bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600
+          className="text-2xl md:text-4xl font-extrabold text-center mb-10
+  bg-pink-500
   bg-clip-text text-transparent
   drop-shadow-lg
   transition-transform duration-500 hover:scale-105 hover:tracking-wider"
@@ -45,10 +42,7 @@ const Section6 = () => {
           قسم مميز
         </h2>
 
-        <Carousel
-          plugins={[autoplay.current]}
-          className="sm:max-w-6xl mx-auto max-w-6xl"
-        >
+        <Carousel className="sm:max-w-6xl mx-auto max-w-6xl">
           <CarouselContent>
             {images.map((img, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">

@@ -23,11 +23,11 @@ const Section3 = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section className="py-10 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto sm:px-6 px-12">
         <h2
-          className="text-2xl md:text-4xl font-extrabold text-center mb-16
-  bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600
+          className="text-2xl md:text-4xl font-extrabold text-center mb-10
+  bg-pink-500
   bg-clip-text text-transparent
   drop-shadow-lg
   transition-transform duration-500 hover:scale-105 hover:tracking-wider"

@@ -1,4 +1,5 @@
 import About from "@/sections/about";
+import ContactSection from "@/sections/contact";
 import Hero from "@/sections/home";
 import Manadeels from "@/sections/madeel";
 import Section2 from "@/sections/section2";
@@ -18,6 +19,7 @@ export default function Home() {
       <Section4 />
       <Section5 />
       <Section6 />
+      <ContactSection />
     </>
   );
 }

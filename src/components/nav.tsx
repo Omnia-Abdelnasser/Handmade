@@ -73,7 +73,7 @@ const Navbar = () => {
                   : "dark:text-gray-50 "
               }`}
             >
-              تواصل معني
+              تواصل معي
             </a>
           </div>
 
@@ -117,9 +117,9 @@ const Navbar = () => {
               الرئيسية
             </a>
             <a
-              href="#products"
+              href="#Mandeel"
               className={`block px-3 py-2 text-base font-medium transition-colors ${
-                activeLink === "products"
+                activeLink === "Mandeel"
                   ? "text-pink-500"
                   : "dark:text-gray-50 "
               }`}
