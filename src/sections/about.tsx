@@ -2,7 +2,11 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section dir="rtl" id="about" className=" dark:bg-gray-900 bg-gray-50">
+    <section
+      dir="rtl"
+      id="about"
+      className=" dark:bg-gray-900 bg-gray-50 by-10"
+    >
       <div className="container mx-auto px-6 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="text-center md:text-right px-2">

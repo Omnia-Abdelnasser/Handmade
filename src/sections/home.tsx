@@ -3,9 +3,9 @@ export default function Hero() {
     <>
       <section
         id="home"
-        className=" min-h-screen relative bg-gray-50 dark:bg-gray-900 py-10 px-6 text-center"
+        className=" relative bg-gray-50 dark:bg-gray-900 py-20 px-6 text-center "
       >
-        <div className="max-w-3xl mx-auto mt-[15%]">
+        <div className="max-w-3xl mx-auto mt-[10%] py-10">
           <h1 className="text-2xl md:text-5xl font-semibold text-pink-500 leading-tight">
             ✨Creative Hive✨
           </h1>

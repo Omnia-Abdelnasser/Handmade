@@ -33,7 +33,7 @@ const Section6 = () => {
     <section className="py-10 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto sm:px-6 px-12">
         <h2
-          className="text-2xl md:text-4xl font-extrabold text-center mb-10
+          className="text-2xl md:text-4xl font-extrabold text-center mb-7
   bg-pink-500
   bg-clip-text text-transparent
   drop-shadow-lg
@@ -67,8 +67,8 @@ const Section6 = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="absolute left-[-20] top-1/2 -translate-y-1/2 z-10" />
-          <CarouselNext className="absolute right-[-20] top-1/2 -translate-y-1/2 z-10" />
+          <CarouselPrevious className="absolute left-[-30] top-1/2 -translate-y-1/2 z-10" />
+          <CarouselNext className="absolute right-[-30] top-1/2 -translate-y-1/2 z-10" />
         </Carousel>
       </div>
     </section>

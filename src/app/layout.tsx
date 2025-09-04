@@ -6,7 +6,7 @@ import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Handmade Website",
-    description: "A modern platform to showcase handmade products and crafts.",
+  description: "A modern platform to showcase handmade products and crafts.",
 };
 
 export default function RootLayout({

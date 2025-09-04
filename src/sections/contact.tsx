@@ -1,6 +1,6 @@
 "use client";
 
-import {  MessageCircle, Instagram, Globe } from "lucide-react";
+import { MessageCircle, Instagram, Globe } from "lucide-react";
 
 export default function ContactSection() {
   return (
