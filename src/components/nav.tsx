@@ -110,30 +110,36 @@ const Navbar = () => {
           <div className="mt-2 space-y-1 rounded-lg px-2 pb-3 pt-2">
             <a
               href="#home"
+              onClick={() => handleClick("home")}
               className={`block px-3 py-2 text-base font-medium transition-colors ${
                 activeLink === "home" ? "text-pink-500" : "dark:text-gray-50 "
               }`}
             >
               الرئيسية
             </a>
+
             <a
               href="#Mandeel"
+              onClick={() => handleClick("products")}
               className={`block px-3 py-2 text-base font-medium transition-colors ${
-                activeLink === "Mandeel"
+                activeLink === "products"
                   ? "text-pink-500"
                   : "dark:text-gray-50 "
               }`}
             >
               المنتجات
             </a>
+
             <a
               href="#about"
+              onClick={() => handleClick("about")}
               className={`block px-3 py-2 text-base font-medium transition-colors ${
                 activeLink === "about" ? "text-pink-500" : "dark:text-gray-50 "
               }`}
             >
               من نحن
             </a>
+
             <a
               href="#contact"
               onClick={() => handleClick("contact")}
