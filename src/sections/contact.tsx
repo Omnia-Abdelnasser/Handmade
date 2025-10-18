@@ -12,7 +12,7 @@ export default function ContactSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <a
-            href="https://wa.me/201208130808"
+            href="https://wa.me/201094963250"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center space-y-2 hover:scale-105 transition"

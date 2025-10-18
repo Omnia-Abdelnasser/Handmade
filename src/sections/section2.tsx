@@ -12,6 +12,7 @@ import Image from "next/image";
 
 const Section2 = () => {
   const images = [
+    "//section2/e1.jpg",
     "/section2/e1.jpg",
     "/section2/e11.jpg",
     "/section2/e2.jpg",
@@ -19,7 +20,7 @@ const Section2 = () => {
     "/section2/e3.jpg",
 
     "/section2/e4.jpg",
-    // "/section2/e14.jpg",
+  
     "/section2/e5.jpg",
     "/section2/e15.jpg",
     "/section2/e6.jpg",
