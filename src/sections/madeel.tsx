@@ -12,6 +12,11 @@ import Image from "next/image";
 
 const ManadeelSlider = () => {
   const images = [
+    "/Manadeel/m28.jpg",
+    "/Manadeel/m29.jpg",
+    "/Manadeel/m30.jpg",
+    "/Manadeel/m31.jpg",
+    "/Manadeel/m32.jpg",
     "/Manadeel/m1.jpg",
     "/Manadeel/m25.jpg",
     "/Manadeel/m26.jpg",
@@ -25,7 +30,6 @@ const ManadeelSlider = () => {
     "/Manadeel/m5.jpg",
     "/Manadeel/m21.jpg",
     "/Manadeel/m6.jpg",
-
     "/Manadeel/m7.jpg",
     "/Manadeel/m19.jpg",
     "/Manadeel/m8.jpg",

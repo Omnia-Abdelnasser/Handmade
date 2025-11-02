@@ -12,6 +12,7 @@ import Image from "next/image";
 
 const Section6 = () => {
   const images = [
+    "/section6/s16.jpg",
     "/section6/s1.jpg",
     "/section6/s2.jpg",
     "/section6/s3.jpg",

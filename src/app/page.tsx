@@ -1,3 +1,4 @@
+import WhatsAppFloating from "@/components/scroll";
 import About from "@/sections/about";
 import ContactSection from "@/sections/contact";
 import Hero from "@/sections/home";
@@ -11,6 +12,7 @@ import Section6 from "@/sections/section6";
 export default function Home() {
   return (
     <>
+      <WhatsAppFloating />
       <Hero />
       <About />
       <Manadeels />
